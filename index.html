@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<style>
+		body{
+			text-align: center;
+			background-color: #a9d7d1;
+		}
+
+		#survey-form{
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #fafafa;
+			border-radius: 10px;
+		}
+
+		.row-tab{
+			display: block;
+			padding-top: 30px;
+		}
+
+		.label{
+			display: inline-block;
+			width: 40%;
+			text-align: right;
+		}
+
+		.input{
+			display: inline-block;
+			width: 48%;
+			text-align: left;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<h1>Survey Form</h1>
+
+	<form id="survey-form">
+		<!-- First Name -->
+		<div class="row-tab">
+			<div class="label">
+				<label>*Name:</label>
+			</div>
+			<div class="input">
+				<input type="text" name="first-name" placeholder="Enter your first name">
+			</div>
+		</div>
+
+		<!-- Surname -->
+		<div class="row-tab">
+			<div class="label">
+					<label>*Surname:</label>
+				</div>
+				<div class="input">
+					<input type="text" name="Surname" placeholder="Enter your surname">
+				</div>
+			</div>
+		</div>
+		<!-- Email -->
+		<div class="row-tab">
+			<div class="label">
+				<label>*Email:</label>
+			</div>
+			<div class="input">
+				<input type="Email" name="email" placeholder="Enter your Email">
+			</div>
+		</div>
+
+		<!-- Age -->
+		<div class="row-tab">
+			<div class="label">
+				<label>*Age:</label>
+			</div>
+			<div class="input">
+				<input type="number" name="Age" placeholder="Enter your age" min="0" max="120">
+			</div>
+		</div>
+
+		<!-- Dropbox -->
+		<div class="row-tab">
+			<div class="label">
+				<label>A Dropbox Menu:</label>
+			</div>
+			<div class="input">
+				<select>
+					<option value="op1">Option 1</option>
+					<option value="op2">Option 2</option>
+					<option value="op3">Option 3</option>
+					<option value="op4">Option 4</option>
+					<option value="op5">Option 5</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Radio Buttons -->
+		<div class="row-tab">
+			<div class="label" style="vertical-align: top;">
+				<label>Radio Buttons:</label>
+			</div>
+			<div class="input">
+				<div>
+				<label>Radio 1
+				<input type="radio" name="radio-button">
+				</label>
+				</div>
+
+				<div>
+				<label>Radio 2
+				<input type="radio" name="radio-button">
+				</label>
+				</div>
+
+				<div>	
+				<label>Radio 3
+				<input type="radio" name="radio-button">
+				</label>
+				</div>
+			</div>
+		</div>
+
+		<!-- Checkbox -->
+		<div class="row-tab">
+			<div class="label">
+				<label>Checkbox:</label>
+			</div>
+			<div class="input">
+				<label>
+					Checkbox 1
+					<input type="Checkbox" name="checkbox">
+				</label>
+				<label>
+					Checkbox 2
+					<input type="Checkbox" name="checkbox">
+				</label>
+				<label>
+					Checkbox 3
+					<input type="Checkbox" name="checkbox">
+				</label>
+			</div>
+		</div>
+
+		<!-- Textarea -->
+		<div class="row-tab">
+			<textarea>Enter your comments here.</textarea>
+		</div>
+
+		<!--Submit Button -->
+		<div class="row-tab" style="padding-bottom: 40px;">
+			<input type="submit" name="submit-button" style="padding: 10px;">
+		</div>
+	</form>
+
+
+
+</body>
+</html>
